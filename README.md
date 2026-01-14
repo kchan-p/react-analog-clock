@@ -1,7 +1,7 @@
 # react-analog-clock
 
-React + Viteでのアナログ時計サンプル
-https://note.affi-sapo-sv.com/react-analog-clock.php
+React + Viteでのアナログ時計サンプル<br>
+https://note.affi-sapo-sv.com/react-analog-clock.php<br>
 
 ---
 
@@ -14,19 +14,19 @@ https://note.affi-sapo-sv.com/react-analog-clock.php
 
 ## 開発方法
 
-npm install
-npm run dev
+npm install<br>
+npm run dev<br>
 
 ## ビルド
 
-npm run build
+npm run build<br>
 
 ## 作者
 
-名前: kchan
-GitHub: https://github.com/kchan-p/
-Website: https://note.affi-sapo-sv.com/
+名前: kchan<br>
+GitHub: https://github.com/kchan-p/<br>
+Website: https://note.affi-sapo-sv.com/<br>
 
 ## ライセンス
 
-MIT License
+MIT License<br>
