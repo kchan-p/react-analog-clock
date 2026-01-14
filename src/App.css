@@ -1,0 +1,115 @@
+#clock-wrap,#clock-wrap div {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#clock-wrap{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+/* 文字盤外周 */
+#face-frame {
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 50%;
+}
+/* 文字盤目盛り */
+.face-line1,
+.face-line2 {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.face-line1 {
+  width: 7px;
+  height: 3px;
+  background: black;
+  top: calc(50% - 2px);
+}
+.face-line2 {
+  width: 5px;
+  height: 2px;
+  background: black;
+  top: calc(50% - 1px);
+}
+/* 文字盤テキスト */
+.face-text {
+  color: black;
+  font-size: 2em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+/* 文字盤中央の円 */
+.face-center,
+.face-center:after {
+  border-radius: 50%;
+  position: absolute;
+}
+.face-center {
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  background-color: #282828;
+  height: 21px;
+  width: 21px;
+  transform: translate(-50%, -50%);
+}
+.face-center:after {
+  content: "";
+  background-color: silver;
+  top: 2px;
+  left: 2px;
+  height: 17px;
+  width: 17px;
+}
+/* 秒針 */
+#hand-second {
+  --react-analog-clock-handlengthper:85;
+  --react-analog-clock-handgapper:20;
+  background-color: red;
+  width: 5px;
+  position: absolute;
+  z-index: 10;
+  border-radius: 5px;
+}
+/* 分針 */
+#hand-minute {
+  --react-analog-clock-handlengthper:80;
+  --react-analog-clock-handgapper:10;
+  background-color: black;
+  width: 14px;
+  position: absolute;
+  z-index: 9;
+  border-radius: 5px;
+}
+/* 時針 */
+#hand-hour {
+  --react-analog-clock-handlengthper:55;
+  --react-analog-clock-handgapper:10;
+  background-color: black;
+  width: 20px;
+  position: absolute;
+  z-index: 8;
+  border-radius: 5px;
+}
+/* 情報パネル */
+#clock-info{
+  position: absolute;
+  width: 120px;
+  padding: 5px;
+  font-size: 0.8em;
+  top:0;
+  right: 0;
+  background-color: #282828;
+  color: white;
+}
+#clock-info p{
+  margin: 0;
+}
+#clock-info a{
+  color: aqua;
+}
